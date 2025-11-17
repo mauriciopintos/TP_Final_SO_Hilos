@@ -1,0 +1,84 @@
+## Compilados generales
+bin/
+obj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]og/
+[Ll]ogs/
+
+## Configuración de usuario (no compartir)
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vs/
+*.VC.db
+*.VC.VC.opendb
+
+## Visual Studio Code (solo archivos de usuario)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## Archivos de solución y proyectos temporales
+*.aps
+*.ncb
+*.opendb
+*.cachefile
+
+## Resultados de tests
+[Tt]est[Rr]esult*/
+[Tt]est[Rr]esults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Paquetes NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+## Publicaciones / publish
+[Bb]in/[Rr]elease*/
+[Bb]in/[D]ebug*/
+publish/
+app.publish/
+
+## Archivos de configuración locales
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+
+## Residuos de compilación
+*.obj
+*.exe
+*.dll
+*.pdb
+*.ldb
+*.idb
+*.ilk
+*.pch
+*.pyo
+*.pyc
+*.tmp
+*.log
+
+## Rider / JetBrains
+.idea/
+*.sln.iml
+
+## Herramientas de análisis
+*.sarif
+
+## Otros
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
