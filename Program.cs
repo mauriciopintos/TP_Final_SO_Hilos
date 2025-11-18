@@ -3,14 +3,15 @@ class Program
     static void Main(string[] args)
     {
 
-        config = null!;
+        //var config = null!;
 
         // Modo interactivo
         Console.WriteLine("=== Procesamiento de imagen con hilos ===");
         
         // Definir path
         Console.Write("Ingrese el nombre de la imagen (con extensión), ubicada en .\\assets\\: ");
-        string nombreImagen = Console.ReadLine() ?? string.Empty;
+        // string nombreImagen = Console.ReadLine() ?? string.Empty;
+        string nombreImagen = "imagen1.jpg";
         string ruta = Path.Combine(".", "assets", nombreImagen);
 
         // Definir cantidad de hilos  (default prueba es 4)
@@ -20,7 +21,12 @@ class Program
         int opcion=2;
 
 
-        config = new ConfigProcesador(ruta, hilos, opcion);
+        var config = new ConfigProcesador
+         {
+            Ruta = ruta,
+            Hilos = hilos,
+            Opcion = opcion
+        };
 
         ProcesadorImagen.Procesar(config);
     }
