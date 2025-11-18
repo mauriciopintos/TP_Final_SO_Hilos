@@ -64,7 +64,7 @@ public static class ProcesadorImagen
                     lock (bloqueoConsola)
                     {
                         Console.WriteLine(
-                            $"[Hilo {idHilo:00} - {ControlTiempo.MarcaTiempo()}] INICIO -> procesando filas [{filaInicio}, {filaFin})"
+                            $"[Hilo {idHilo:00} - {ControlTiempo.MarcaTiempo()}] INICIO -> procesando filas [{filaInicio}, {filaFin}]"
                         );
                     }
 
@@ -110,9 +110,10 @@ public static class ProcesadorImagen
                         lock (bloqueoConsola)
                         {
                             Console.WriteLine(
-                                $"[Hilo {idHilo:00} - {ControlTiempo.MarcaTiempo()}] FIN -> filas [{filaInicio}, {filaFin}), px: {cantPix:N0}, " +
-                                $"prom parciales RGB: R={promRLocal:F2} G={promGLocal:F2} B={promBLocal:F2}, " +
-                                $"tiempo: {timerLocal.ElapsedMilliseconds} ms"
+                                $"[Hilo {idHilo:00} - {ControlTiempo.MarcaTiempo()}] FIN -> filas [{filaInicio}, {filaFin}] | " +
+                                $"px: {cantPix:N0} | " +
+                                $"prom RGB: R={promRLocal:F2} G={promGLocal:F2} B={promBLocal:F2} | " +
+                                $"tiempo: {timerLocal.ElapsedMilliseconds} ms |"
                             );
                         }
                     }
