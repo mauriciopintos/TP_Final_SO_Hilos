@@ -11,7 +11,7 @@ public static class ProcesadorImagen
     public static void Procesar(ConfigProcesador config)
     {
         // Cargar la imagen original desde la ruta de la configuración
-        using var bitmapOriginal = new Bitmap(config.Ruta);
+        using var bmpOriginal = new Bitmap(config.Ruta);
         
         // Aseguro formato 24bpp para acceso lineal BGR
         using var bitmapProcesada =
