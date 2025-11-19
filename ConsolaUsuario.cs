@@ -71,7 +71,7 @@ public static class ConsolaUsuario
         3- G (Análisis de Verde)
         4- B (Análisis de Azul)
         """);
-        Console.WriteLine("Opción: ");
+        Console.Write("Opción: ");
 
         int opcion;
         while (!int.TryParse(Console.ReadLine(), out opcion) || opcion < 1 || opcion > 4)
