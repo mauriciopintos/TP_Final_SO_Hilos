@@ -6,7 +6,7 @@
 **Docente:**    Ing. Gabriel Esquivel  
 **Materia:**    Sistemas Operativos  
 **Año:**        2025  
-**Revisión:**   1.1  
+**Revisión:**   1.0  
 
 ---    
 
